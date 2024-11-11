@@ -1,46 +1,62 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="お年玉がたくさん欲しい！"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+[bg storage=gannjitu.jpeg time=500]
 
-メロスは激怒した。[l][r]
+明けましておめでとうございます！ [l][r]
+今年もよろしくお願いします！ [l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
-[s]
-
-*tag_sleep
+Aくん:大晦日といえばお年玉！ [l][r]
+Aくん:おじいちゃんおばあちゃんからたくさんお年玉をもらえるように頑張って機嫌を取るぞ！ [l][r]
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=jiityannbaatyann.jpeg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+おじいちゃんおばあちゃん:明けましておめでとう、Aくん。 [l][r]
+Aくん:明けましておめでとうございます！おじいちゃん！おばあちゃん！ [l][r]
 
-【 BAD END 】[l][cm]
+[link target=*tag_normal]→お年玉ください！[r]
+[link target=*tag_bad]→お年玉をたっくさんください！[r]
+[link target=*tag_good]→お二人ともまだまだ若いですね！[r]
+[s]
+
+*tag_normal
+
+[cm]
+
+おじいちゃん:しょうがないな～[l][r]
+Aくんはお年玉を10000円もらった。[r]
+
+【NORMAL END】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_bad
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=okorujiityann.png time=500]
+
+おじいちゃん:図々しい子だね！今年はお年玉なし！[l][r]
+Aくん:ぴえん[r]
+
+【BAD END】[l][cm]
+
+[jump target=*start]
+
+*tag_good
+
+[cm]
+
+おじいちゃん:あら、いい子だね～。今年はお年玉多めにあげるわ。[l][r]
+Aくん:やったー！[l][r]
+Aくんはお年玉10万円をもらった。[r]
+
+【GOOD END】[l][cm]
 
 [jump target=*start]
